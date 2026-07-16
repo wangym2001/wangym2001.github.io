@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Yiming Wang | Academic Homepage</title>
+  <meta name="description" content="Personal academic homepage of Yiming Wang." />
+
+  <!-- Font Awesome: GitHub / X / Zhihu / Location / Email / Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <!-- Academicons: Google Scholar -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav>
+      <a class="logo" href="#">Yiming Wang</a>
+
+      <div class="nav-links">
+        <a href="#about">Profile</a>
+        <a href="#publications">Publications</a>
+        <a href="#service">Academic Service</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Yiming Wang（王一鸣）</h1>
+
+        <p class="hero-subtitle">Ph.D. Candidate @ SJTU, School of Computer Science</p>
+
+        <p class="hero-address">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>No.800, Dongchuan Road, Minhang District, Shanghai, China.</span>
+        </p>
+
+        <p class="hero-email">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:alsaceym@gmail.com">alsaceym@gmail.com</a>
+        </p>
+
+        <div class="icon-links">
+          <a
+            href="https://scholar.google.com/citations?user=2C1VDq8AAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Google Scholar"
+          >
+            <i class="ai ai-google-scholar"></i>
+          </a>
+
+          <a
+            class="scholar-metrics"
+            href="https://scholar.google.com/citations?user=2C1VDq8AAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Google Scholar metrics; updated daily"
+          >
+            <span>Citations <strong id="citation-count">--</strong></span>
+            <span>h-index <strong id="h-index">--</strong></span>
+          </a>
+
+          <a
+            href="https://github.com/Alsace08"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://x.com/alsaceym"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a
+            href="https://www.zhihu.com/people/yikou-niao-93"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Zhihu"
+          >
+            <i class="fa-brands fa-zhihu"></i>
+          </a>
+
+          <a
+            href="https://www.xiaohongshu.com/user/profile/61b6db2a000000001000d2d5"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Xiaohongshu"
+            title="Xiaohongshu"
+          >
+            <span class="xiaohongshu-icon">RED</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="photo-panel">
+        <img src="assets/profile.jpg" alt="Yiming Wang" />
+      </div>
+
+      <div class="cv-panel">
+        <div class="cv-header">
+          <span>Curriculum Vitae</span>
+
+          <div class="cv-controls">
+            <button id="prev-page" type="button" aria-label="Previous page">‹</button>
+            <button id="next-page" type="button" aria-label="Next page">›</button>
+          </div>
+        </div>
+
+        <div class="cv-viewer">
+          <iframe
+            id="cv-frame"
+            src="assets/cv.pdf#toolbar=0&navpanes=0&scrollbar=0&page=1"
+            title="CV Preview">
+          </iframe>
+        </div>
+
+        <div class="cv-footer">
+          <span id="page-indicator">Page 1 / 2</span>
+          <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="about" class="section profile-section">
+      <h2>Profile</h2>
+
+      <p>
+        I was born in Jiangsu Province, China, in August 2001. I am now a third-year
+        Ph.D. candidate at the School of Computer Science, Shanghai Jiao Tong University,
+        supervised by
+        <a href="https://wangruinlp.github.io/" target="_blank" rel="noopener noreferrer">Prof. Rui Wang</a>.
+        Before that, I received a Bachelor's degree from the Institute of Artificial Intelligence,
+        Beihang University.
+      </p>
+
+
+      <div class="profile-block">
+        <h3>
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+          Research Interests
+        </h3>
+
+        <p class="research-interest-text">
+          My research interests center on two directions:
+        </p>
+
+        <ul class="research-interest-list">
+          <li>
+            <strong>LLM Reasoning:</strong>
+            Developing stronger general reasoning capabilities, while making reasoning more
+            interpretable / efficient / multi-dimensional (including
+            multilingual, multimodal, and agentic settings).
+          </li>
+          <li>
+            <strong>Self-Evolving LLMs:</strong>
+            Developing self-iteration and generalization capability in <b>zero-external-data</b> or
+            <b>zero-supervised-label</b> settings, through approaches including in-context learning, test-time
+            scaling, and reinforcement learning.
+          </li>
+        </ul>
+      </div>
+
+      
+      <div class="profile-block">
+        <h3>
+          <i class="fa-solid fa-book-open"></i>
+          Education
+        </h3>
+
+        <div class="profile-entry">
+          <span class="profile-date">2023.09 - Present</span>
+          <span class="profile-content">
+            Department of Computer Science and Engineering, Shanghai Jiao Tong University (SJTU),
+            Shanghai, China
+          </span>
+        </div>
+
+        <div class="profile-entry">
+          <span class="profile-date">2019.09 - 2023.06</span>
+          <span class="profile-content">
+            Institute of Artificial Intelligence, Beihang University (BUAA), Beijing, China
+          </span>
+        </div>
+      </div>
+
+      <div class="profile-block">
+        <h3>
+          <i class="fa-solid fa-laptop-code"></i>
+          Internships
+        </h3>
+
+        <div class="profile-entry">
+          <span class="profile-date">2024.07 - 2025.07</span>
+          <span class="profile-content">
+            Qwen Team, Alibaba, Hangzhou<br />
+            <span class="profile-subline">
+              Research Intern: Multilingual / Multimodal LLMs<br/>
+              Mentor: <a href="https://scholar.google.com/citations?user=fXsHJXkAAAAJ&hl=en">Dr. Baosong Yang</a>
+            </span>
+          </span>
+        </div>
+
+        <div class="profile-entry">
+          <span class="profile-date">2023.03 – 2023.09</span>
+          <span class="profile-content">
+            Institute of AI Industry Research (AIR), Tsinghua University, Beijing<br />
+            <span class="profile-subline">
+              Research Intern: AI for Science<br/>
+              Mentor: <a href="https://zhouh.github.io/">Prof. Hao Zhou</a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section">
+      <h2>
+        Technical Report
+      </h2>
+
+      <div class="publication-list">
+        <article class="publication-card">
+          <div class="publication-main">
+            <div class="publication-info">
+              <h3>Qwen3 Technical Report</h3>
+
+              <p class="pub-authors">
+                <b>One of Contributors</b>
+              </p>
+
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2505.09388" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://huggingface.co/Qwen" target="_blank" rel="noopener noreferrer">Model</a>
+                <details class="bibtex-details">
+                  <summary>BibTeX</summary>
+                  <pre><code>@article{qwen3,
+  title   = {Qwen3 Technical Report},
+  author  = {An Yang and Anfeng Li and Baosong Yang and Beichen Zhang and Binyuan Hui and Bo Zheng and Bowen Yu and Chang Gao and Chengen Huang and Chenxu Lv and Chujie Zheng and Dayiheng Liu and Fan Zhou and Fei Huang and Feng Hu and Hao Ge and Haoran Wei and Huan Lin and Jialong Tang and Jian Yang and Jianhong Tu and Jianwei Zhang and Jianxin Yang and Jiaxi Yang and Jing Zhou and Jingren Zhou and Junyang Lin and Kai Dang and Keqin Bao and Kexin Yang and Le Yu and Lianghao Deng and Mei Li and Mingfeng Xue and Mingze Li and Pei Zhang and Peng Wang and Qin Zhu and Rui Men and Ruize Gao and Shixuan Liu and Shuang Luo and Tianhao Li and Tianyi Tang and Wenbiao Yin and Xingzhang Ren and Xinyu Wang and Xinyu Zhang and Xuancheng Ren and Yang Fan and Yang Su and Yichang Zhang and Yinger Zhang and Yu Wan and Yuqiong Liu and Zekun Wang and Zeyu Cui and Zhenru Zhang and Zhipeng Zhou and Zihan Qiu},
+  journal = {arXiv preprint arXiv:2505.09388},
+  year    = {2025}
+}</code></pre>
+                </details>
+              </div>
+
+              <ul class="pub-summary">
+                <li>Introduces the Qwen3 model family, unifying thinking and non-thinking modes while advancing reasoning, efficiency, and multilingual capabilities across dense and MoE architectures.</li>
+              </ul>
+            </div>
+
+            <div class="publication-image-wrap">
+              <a
+                href="assets/publications/qwen3.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open large image"
+              >
+                <img src="assets/publications/qwen3.png" alt="Qwen3 preview" />
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+
+      </div>
+    </section>
+
+
+
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section">
+      <h2>
+        Selected Publications
+        <a
+          href="https://scholar.google.com/citations?user=2C1VDq8AAAAJ&hl=en"
+          title="Full Publications"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          [Full Publications]
+        </a>
+      </h2>
+
+      <div class="publication-list">
+        <article class="publication-card">
+          <div class="publication-main">
+            <div class="publication-info">
+              <h3>PolyMath: Evaluating Mathematical Reasoning in Multilingual Contexts</h3>
+
+              <p class="pub-authors">
+                <b>Yiming Wang</b>, Pei Zhang, Jialong Tang, Haoran Wei, Baosong Yang, Rui Wang,
+                Chenshu Sun, Feitong Sun, Jiran Zhang, Junxuan Wu, Qiqian Cang, Yichang Zhang,
+                Fei Huang, Junyang Lin, Fei Huang, Jingren Zhou
+              </p>
+
+              <p class="pub-venue">
+                Annual Conference on Neural Information Processing Systems (NeurIPS), 2025
+              </p>
+
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2504.18428" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/QwenLM/PolyMath" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://huggingface.co/datasets/Qwen/PolyMath" target="_blank" rel="noopener noreferrer">Dataset</a>
+                <details class="bibtex-details">
+                  <summary>BibTeX</summary>
+                  <pre><code>@inproceedings{wang2025polymath,
+  title     = {PolyMath: Evaluating Mathematical Reasoning in Multilingual Contexts},
+  author    = {Yiming Wang and Pei Zhang and Jialong Tang and Haoran Wei and Baosong Yang and Rui Wang and Chenshu Sun and Feitong Sun and Jiran Zhang and Junxuan Wu and Qiqian Cang and Yichang Zhang and Fei Huang and Junyang Lin and Fei Huang and Jingren Zhou},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2025}
+}</code></pre>
+                </details>
+              </div>
+
+              <ul class="pub-summary">
+                <li>Introduces PolyMath, a multilingual mathematical reasoning benchmark spanning 18 languages and four difficulty levels for evaluating reasoning models across languages and complexities.</li>
+                <li><b>Incorporated into the official benchmark of the Qwen3 family.</b></li>
+              </ul>
+            </div>
+
+            <div class="publication-image-wrap">
+              <a
+                href="assets/publications/polymath.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open large image"
+              >
+                <img src="assets/publications/polymath.png" alt="PolyMath preview" />
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <div class="publication-main">
+            <div class="publication-info">
+              <h3>Sampling-Efficient Test-Time Scaling: Self-Estimating the Best-of-N Sampling in Early Decoding</h3>
+
+              <p class="pub-authors">
+                <b>Yiming Wang</b>, Pei Zhang, Siyuan Huang, Baosong Yang, Zhuosheng Zhang, Fei Huang, Rui Wang
+              </p>
+
+              <p class="pub-venue">
+                Annual Conference on Neural Information Processing Systems (NeurIPS), 2025
+                <span class="pub-badge">
+                  <i class="fa-solid fa-star"></i>
+                  Spotlight
+                </span>
+              </p>
+
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2503.01422" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+                <details class="bibtex-details">
+                  <summary>BibTeX</summary>
+                  <pre><code>@inproceedings{wang2025sampling,
+  title     = {Sampling-Efficient Test-Time Scaling: Self-Estimating the Best-of-N Sampling in Early Decoding},
+  author    = {Yiming Wang and Pei Zhang and Siyuan Huang and Baosong Yang and Zhuosheng Zhang and Fei Huang and Rui Wang},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2025}
+}</code></pre>
+                </details>
+              </div>
+
+              <ul class="pub-summary">
+                <li>Proposes Self-Truncation Best-of-N (ST-BoN), which identifies promising reasoning paths from early hidden-state consistency and truncates inferior samples without a reward model.</li>
+              </ul>
+            </div>
+
+            <div class="publication-image-wrap">
+              <a
+                href="assets/publications/st-bon.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open large image"
+              >
+                <img src="assets/publications/st-bon.png" alt="Test-time scaling preview" />
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <div class="publication-main">
+            <div class="publication-info">
+              <h3>Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation</h3>
+
+              <p class="pub-authors">
+                <b>Yiming Wang</b>, Pei Zhang, Baosong Yang, Derek F. Wong, Rui Wang
+              </p>
+
+              <p class="pub-venue">
+                International Conference on Learning Representations (ICLR), 2025
+              </p>
+
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2410.13640" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/Alsace08/Chain-of-Embedding" target="_blank" rel="noopener noreferrer">Code</a>
+                <details class="bibtex-details">
+                  <summary>BibTeX</summary>
+                  <pre><code>@inproceedings{wang2025latent,
+  title     = {Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation},
+  author    = {Yiming Wang and Pei Zhang and Baosong Yang and Derek F. Wong and Rui Wang},
+  booktitle = {The Thirteenth International Conference on Learning Representations},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=jxo70B9fQo}
+}</code></pre>
+                </details>
+              </div>
+
+              <ul class="pub-summary">
+                <li>Proposes Chain-of-Embedding, a training-free and output-free method that uses progressive hidden-state trajectories to estimate the correctness of LLM responses.</li>
+              </ul>
+            </div>
+
+            <div class="publication-image-wrap">
+              <a
+                href="assets/publications/chain-of-embedding.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open large image"
+              >
+                <img src="assets/publications/chain-of-embedding.png" alt="Chain-of-Embedding preview" />
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <div class="publication-main">
+            <div class="publication-info">
+              <h3>RetroDiff: Retrosynthesis as Multi-stage Distribution Interpolation</h3>
+
+              <p class="pub-authors">
+                <b>Yiming Wang</b>, Yuxuan Song, Yiqun Wang, Minkai Xu, Rui Wang, Hao Zhou, Wei-Ying Ma
+              </p>
+
+              <p class="pub-venue">
+                International Conference on Artificial Intelligence and Statistics (AISTATS), 2025
+              </p>
+
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2311.14077" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/Alsace08/RetroDiff" target="_blank" rel="noopener noreferrer">Code</a>
+                <details class="bibtex-details">
+                  <summary>BibTeX</summary>
+                  <pre><code>@inproceedings{wang2025retrodiff,
+  title     = {RetroDiff: Retrosynthesis as Multi-stage Distribution Interpolation},
+  author    = {Yiming Wang and Yuxuan Song and Yiqun Wang and Minkai Xu and Rui Wang and Hao Zhou and Wei-Ying Ma},
+  booktitle = {Proceedings of the 28th International Conference on Artificial Intelligence and Statistics},
+  pages     = {1918--1926},
+  year      = {2025}
+}</code></pre>
+                </details>
+              </div>
+
+              <ul class="pub-summary">
+                <li>Formulates retrosynthesis as multi-stage distribution interpolation and develops a conditional diffusion model that sequentially generates external groups and bonds from products.</li>
+              </ul>
+            </div>
+
+            <div class="publication-image-wrap">
+              <a
+                href="assets/publications/retrodiff.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open large image"
+              >
+                <img src="assets/publications/retrodiff.png" alt="RetroDiff preview" />
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <div class="publication-main">
+            <div class="publication-info">
+              <h3>Embedding Trajectory for Out-of-Distribution Detection in Mathematical Reasoning</h3>
+
+              <p class="pub-authors">
+                <b>Yiming Wang</b>, Pei Zhang, Baosong Yang, Derek F. Wong, Zhuosheng Zhang, Rui Wang
+              </p>
+
+              <p class="pub-venue">
+                Annual Conference on Neural Information Processing Systems (NeurIPS), 2024
+              </p>
+
+              <div class="pub-links">
+                <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/4b734e95f0788a030a69caa987516186-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/Alsace08/OOD-Math-Reasoning" target="_blank" rel="noopener noreferrer">Code</a>
+                <details class="bibtex-details">
+                  <summary>BibTeX</summary>
+                  <pre><code>@inproceedings{wang2024embedding,
+  title     = {Embedding Trajectory for Out-of-Distribution Detection in Mathematical Reasoning},
+  author    = {Yiming Wang and Pei Zhang and Baosong Yang and Derek F. Wong and Zhuosheng Zhang and Rui Wang},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {37},
+  year      = {2024}
+}</code></pre>
+                </details>
+              </div>
+
+              <ul class="pub-summary">
+                <li>Proposes the Trajectory Volatility score, which detects out-of-distribution mathematical reasoning inputs from layer-wise embedding-shift trajectories.</li>
+              </ul>
+            </div>
+
+            <div class="publication-image-wrap">
+              <a
+                href="assets/publications/embedding-trajectory.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open large image"
+              >
+                <img src="assets/publications/embedding-trajectory.png" alt="Embedding trajectory preview" />
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <div class="publication-main">
+            <div class="publication-info">
+              <h3>Meta-Reasoning: Semantics-Symbol Deconstruction For Large Language Models</h3>
+
+              <p class="pub-authors">
+                <b>Yiming Wang</b>, Zhuosheng Zhang, Pei Zhang, Baosong Yang, Rui Wang
+              </p>
+
+              <p class="pub-venue">
+                Findings of the Association for Computational Linguistics: ACL 2024
+              </p>
+
+              <div class="pub-links">
+                <a href="https://aclanthology.org/2024.findings-acl.34.pdf/" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/Alsace08/Meta-Reasoning" target="_blank" rel="noopener noreferrer">Code</a>
+                <details class="bibtex-details">
+                  <summary>BibTeX</summary>
+                  <pre><code>@inproceedings{wang-etal-2024-meta,
+  title     = {Meta-Reasoning: Semantics-Symbol Deconstruction for Large Language Models},
+  author    = {Wang, Yiming and Zhang, Zhuosheng and Zhang, Pei and Yang, Baosong and Wang, Rui},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2024},
+  pages     = {622--643},
+  address   = {Bangkok, Thailand},
+  publisher = {Association for Computational Linguistics},
+  year      = {2024},
+  doi       = {10.18653/v1/2024.findings-acl.34}
+}</code></pre>
+                </details>
+              </div>
+
+              <ul class="pub-summary">
+                <li>Introduces Meta-Reasoning, which abstracts semantically different reasoning tasks into shared symbolic meta-forms to improve in-context reasoning and generalization.</li>
+              </ul>
+            </div>
+
+            <div class="publication-image-wrap">
+              <a
+                href="assets/publications/meta-reasoning.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open large image"
+              >
+                <img src="assets/publications/meta-reasoning.png" alt="Meta-Reasoning preview" />
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <div class="publication-main">
+            <div class="publication-info">
+              <h3>Element-aware Summarization with Large Language Models: Expert-aligned Evaluation and Chain-of-Thought Method</h3>
+
+              <p class="pub-authors">
+                <b>Yiming Wang</b>, Zhuosheng Zhang, Rui Wang
+              </p>
+
+              <p class="pub-venue">
+                Annual Meeting of the Association for Computational Linguistics (ACL), 2023
+              </p>
+
+              <div class="pub-links">
+                <a href="https://aclanthology.org/2023.acl-long.482.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/Alsace08/SumCoT" target="_blank" rel="noopener noreferrer">Code</a>
+                <details class="bibtex-details">
+                  <summary>BibTeX</summary>
+                  <pre><code>@inproceedings{wang-etal-2023-element,
+  title     = {Element-aware Summarization with Large Language Models: Expert-aligned Evaluation and Chain-of-Thought Method},
+  author    = {Wang, Yiming and Zhang, Zhuosheng and Wang, Rui},
+  booktitle = {Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages     = {8640--8665},
+  address   = {Toronto, Canada},
+  publisher = {Association for Computational Linguistics},
+  year      = {2023},
+  doi       = {10.18653/v1/2023.acl-long.482}
+}</code></pre>
+                </details>
+              </div>
+
+              <ul class="pub-summary">
+                <li>Builds expert-written element-aware evaluation sets and proposes Summary Chain-of-Thought to generate more comprehensive and human-aligned summaries.</li>
+              </ul>
+            </div>
+
+            <div class="publication-image-wrap">
+              <a
+                href="assets/publications/sumcot.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open large image"
+              >
+                <img src="assets/publications/sumcot.png" alt="Element-aware Summarization preview" />
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACADEMIC SERVICE -->
+    <section id="service" class="section academic-service-section">
+      <h2>Academic Service</h2>
+
+      <div class="academic-service-list">
+        <div class="academic-service-block">
+          <h3>Reviewer</h3>
+          <ul>
+            <li>
+              ICML (2026 – ), NeurIPS / ICLR / AAAI (2025 – ),
+              ACL ARR Rolling / IEEE TASLP (2024 – )
+            </li>
+          </ul>
+        </div>
+
+        <div class="academic-service-block">
+          <h3>Teaching Assistant (SJTU)</h3>
+          <ul>
+            <li>
+              Natural Language Processing and Large Language Model
+              (2024 – 2025, for the John Class)
+            </li>
+          </ul>
+        </div>
+
+        <div class="academic-service-block">
+          <h3>Teaching Assistant (BUAA)</h3>
+          <ul>
+            <li>Cognitive Basis (2022)</li>
+            <li>
+              Advanced Linear Algebra
+              (2020 – 2022, Outstanding TA for Algebra Courses)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Yiming Wang. Built with GitHub Pages.</p>
+  </footer>
+
+  <script>
+    const totalPages = 2;
+    let currentPage = 1;
+
+    const frame = document.getElementById("cv-frame");
+    const pageIndicator = document.getElementById("page-indicator");
+    const prevBtn = document.getElementById("prev-page");
+    const nextBtn = document.getElementById("next-page");
+
+    function updateCV() {
+      frame.src = `assets/cv.pdf#toolbar=0&navpanes=0&scrollbar=0&page=${currentPage}`;
+      pageIndicator.textContent = `Page ${currentPage} / ${totalPages}`;
+
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === totalPages;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        updateCV();
+      }
+    });
+
+    nextBtn.addEventListener("click", () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        updateCV();
+      }
+    });
+
+    updateCV();
+
+    async function updateScholarMetrics() {
+      try {
+        const response = await fetch(`./scholar-stats.json?t=${Date.now()}`, {
+          cache: "no-store"
+        });
+        if (!response.ok) throw new Error("Scholar metrics unavailable");
+
+        const stats = await response.json();
+        document.getElementById("citation-count").textContent =
+          Number(stats.citations).toLocaleString("en-US");
+        document.getElementById("h-index").textContent = stats.h_index;
+
+        const metrics = document.querySelector(".scholar-metrics");
+        if (stats.updated_at) {
+          metrics.title = `Google Scholar metrics; last updated ${stats.updated_at}`;
+        }
+      } catch (error) {
+        console.warn(error.message);
+      }
+    }
+
+    updateScholarMetrics();
+
+  </script>
+</body>
+</html>
