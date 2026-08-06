@@ -423,7 +423,7 @@ main {
 
 .publication-main {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 420px;
+  grid-template-columns: minmax(0, 1fr) 390px;
   gap: 26px;
   align-items: center;
 }
@@ -570,7 +570,7 @@ main {
 
 /* Consistent, uncropped publication previews */
 .publication-image-wrap {
-  width: 420px;
+  width: 390px;
   max-width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
